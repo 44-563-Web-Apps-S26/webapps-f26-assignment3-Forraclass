@@ -2,4 +2,4 @@
 # WebApps-S26-Assignment-3
 Assignment 3 - Basic HTML
 
-Hosted at [index](file:///C:/Classwork/Web%20dev/webapps-repos/webapps-f26-assignment3-Forraclass/index.html)
+Hosted at [index]([file:///C:/Classwork/Web%20dev/webapps-repos/webapps-f26-assignment3-Forraclass/index.html](https://44-563-web-apps-s26.github.io/webapps-f26-assignment3-Forraclass/))
