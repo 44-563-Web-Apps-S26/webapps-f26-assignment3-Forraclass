@@ -61,5 +61,35 @@
             <li>Ruen Brothers</li>
         </ul>
     <a href="C:\Classwork\Web dev\webapps-repos\webapps-f26-assignment3-Forraclass\myLocation.html" >Mylocation</a>
+    <hr>
+    <h1>Code Snippet Explination: How to do Logging in Python</h1>
+    <p>
+        This code snippet describes how to implement basic logging in pyhton. Logging is a brach of coding that tracks what happens as software execute, and track events as they occur.
+        Line by line, the first line simply imports the logging library. The second line assigns a name to the logger.
+        The next line sets the severity of the logger with DEBUG being on the lowest level and critical being on the highest.
+        The formmater is then assigned a Formatter object that expresses the format of the loggers output.
+        The next chunk of code assigns a message to file_handler, then sets its level and then format.
+        The stream_handler is created in the next line and then is given its nessacary format.
+        The last chunk of code adds the file_handler and stream_handler objects to the logger.
+    </p>
+    <pre>
+    import logging
+
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+
+    formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
+
+    file_handler = logging.FileHandler('sample.log')
+    file_handler.setLevel(logging.ERROR)
+    file_handler.setFormatter(formatter)
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler) 
+    </pre>
+    <a href="https://pieces.app/collections/python">Pieces:Python</a>
     </body>
 </html>
